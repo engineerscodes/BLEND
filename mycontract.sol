@@ -41,3 +41,30 @@ contract mybool{
        neg=newNeg;
    }
 }
+
+contract testAddress{
+
+    address public myaddress;
+
+    function setAddress(address val) public{
+        myaddress=val;
+    }
+
+
+}
+
+contract TestsendAddress{
+    address public adds;
+    function setAddress() public{
+        adds=msg.sender;
+    }
+}
+
+contract TestString{
+
+    string public name;
+
+    function setName(string memory val) public {
+        name=val;
+    }
+}
